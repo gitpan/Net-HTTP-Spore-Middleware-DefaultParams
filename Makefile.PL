@@ -2,27 +2,28 @@
 use strict;
 use warnings;
 
-
+use 5.006;
 
 use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Middleware to set default params for every request made by a spore client ",
-  "AUTHOR" => "Weborama",
-  "BUILD_REQUIRES" => {},
+  "ABSTRACT" => "Middleware to set default params for every request made by a spore client",
+  "AUTHOR" => "Emmanuel \"BHS_error\" Peroumalnaik <peroumalnaik.emmanuel\@gmail.com>",
+  "BUILD_REQUIRES" => {
+    "Module::Build" => "0.3601"
+  },
   "CONFIGURE_REQUIRES" => {
-    "ExtUtils::MakeMaker" => "6.30"
+    "ExtUtils::MakeMaker" => "6.30",
+    "Module::Build" => "0.3601"
   },
   "DISTNAME" => "Net-HTTP-Spore-Middleware-DefaultParams",
   "EXE_FILES" => [],
   "LICENSE" => "perl",
   "NAME" => "Net::HTTP::Spore::Middleware::DefaultParams",
   "PREREQ_PM" => {
-    "Class::MOP::Class" => 0,
     "Moose" => 0,
-    "Net::HTTP::Spore::Meta::Method" => 0,
     "Net::HTTP::Spore::Middleware" => 0
   },
   "TEST_REQUIRES" => {
@@ -32,7 +33,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.02",
+  "VERSION" => "0.03",
   "test" => {
     "TESTS" => "t/*.t"
   }
