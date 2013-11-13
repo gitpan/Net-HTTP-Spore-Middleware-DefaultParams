@@ -1,6 +1,6 @@
 package Net::HTTP::Spore::Middleware::DefaultParams;
 {
-  $Net::HTTP::Spore::Middleware::DefaultParams::VERSION = '0.03';
+  $Net::HTTP::Spore::Middleware::DefaultParams::VERSION = '0.04';
 }
 
 # ABSTRACT: Middleware to set default params for every request made by a spore client
@@ -53,19 +53,20 @@ Net::HTTP::Spore::Middleware::DefaultParams - Middleware to set default params f
 
 =head1 VERSION
 
-version 0.03
-
-=head1 NAME 
-
-    Net::HTTP::Spore::Middleware::DefaultParams -  Middleware to set default parameters 
-    for every request made by a spore client
+version 0.04
 
 =head1 SYNOPSIS
+
     my $client = Net::HTTP::Spore->new_from_spec('api.json'); 
     # foo=bar and blah=baz will be passed on each request. 
     $client->enable('DefaultParams', default_params => { foo => 'bar', blah => 'baz' }); 
 
+=head1 NAME
+
+Net::HTTP::Spore::Middleware::DefaultParams - Set default parameters for outgoing requests
+
 =head1 WARNINGS 
+
     This middleware disables the checking of required parameters, so be sure of what you are doing !
 
 =head1 AUTHOR

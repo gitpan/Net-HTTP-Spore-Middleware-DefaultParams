@@ -18,7 +18,7 @@ my %module_build_args = (
     "Emmanuel \"BHS_error\" Peroumalnaik <peroumalnaik.emmanuel\@gmail.com>"
   ],
   "dist_name" => "Net-HTTP-Spore-Middleware-DefaultParams",
-  "dist_version" => "0.03",
+  "dist_version" => "0.04",
   "license" => "perl",
   "module_name" => "Net::HTTP::Spore::Middleware::DefaultParams",
   "recommends" => {},

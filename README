@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Net-HTTP-Spore-Middleware-DefaultParams,
-version 0.03:
+version 0.04:
 
   Middleware to set default params for every request made by a spore client
 
